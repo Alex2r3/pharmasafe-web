@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaSafe - Tu Botiquín Inteligente</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-container"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-pills"></i>
+                    <div class="rfid-signal"></div>
+                </div>
+                <span class="logo-text">PharmaSafe</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#como-funciona" class="nav-link">Cómo Funciona</a></li>
+                <li><a href="#caracteristicas" class="nav-link">Características</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#equipo" class="nav-link">Equipo</a></li>
+                <li><a href="#contacto" class="nav-link btn-contact">Contacto</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-microchip"></i>
+                <span>Tecnología IoT + RFID</span>
+            </div>
+            <h1 class="hero-title">
+                Tu botiquín inteligente,<br>
+                <span class="gradient-text">siempre conectado</span>
+            </h1>
+            <p class="hero-description">
+                PharmaSafe combina la potencia de ESP32, RFID y una aplicación móvil 
+                para gestionar tus medicamentos de forma inteligente y segura.
+            </p>
+            <div class="hero-buttons">
+                <a href="#como-funciona" class="btn btn-primary">
+                    <span>Descubre más</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+                <a href="#galeria" class="btn btn-secondary">
+                    <i class="fas fa-play"></i>
+                    <span>Ver prototipo</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="fas fa-capsules"></i>
+                    <div class="stat-info">
+                        <h3>Control Total</h3>
+                        <p>Medicamentos monitoreados</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-bell"></i>
+                    <div class="stat-info">
+                        <h3>Alertas Inteligentes</h3>
+                        <p>Notificaciones en tiempo real</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="stat-info">
+                        <h3>100% Seguro</h3>
+                        <p>Tecnología RFID avanzada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-device">
+                <div class="device-frame">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="orbit-ring ring-1"></div>
+                <div class="orbit-ring ring-2"></div>
+                <div class="orbit-ring ring-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Funciona Section -->
+    <section id="como-funciona" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Innovación Médica</span>
+                <h2 class="section-title">¿Cómo funciona PharmaSafe?</h2>
+                <p class="section-description">
+                    Un sistema integrado que trabaja en tres capas para mantener tu salud bajo control
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-step="1">
+                    <div class="timeline-icon">
+                        <i class="fas fa-wifi"></i>
+                        <div class="pulse-effect"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="step-number">01</div>
+                        <h3>Lector RFID Detecta</h3>
+                        <p>El lector RFID identifica automáticamente cada medicamento cuando lo acercas al dispositivo, reconociendo su información almacenada en la etiqueta.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">RFID RC522</span>
+                            <span class="tech-tag">13.56 MHz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-step="2">
+                    <div class="timeline-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="pulse-effect"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="step-number">02</div>
+                        <h3>App Móvil Gestiona</h3>
+                        <p>La aplicación Android recibe los datos vía Bluetooth, almacena información del medicamento y programa alertas personalizadas de toma y caducidad.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">Bluetooth BLE</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-step="3">
+                    <div class="timeline-icon">
+                        <i class="fas fa-microchip"></i>
+                        <div class="pulse-effect"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="step-number">03</div>
+                        <h3>ESP32 Controla y Alerta</h3>
+                        <p>El ESP32 procesa la información, muestra datos en la pantalla LCD y activa el buzzer cuando es hora de tomar un medicamento o si detecta caducidad.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">ESP32</span>
+                            <span class="tech-tag">LCD 16x2</span>
+                            <span class="tech-tag">Buzzer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="system-diagram">
+                <div class="diagram-node node-device">
+                    <i class="fas fa-box"></i>
+                    <span>Dispositivo IoT</span>
+                </div>
+                <div class="connection-line line-1"></div>
+                <div class="diagram-node node-phone">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>App Móvil</span>
+                </div>
+                <div class="connection-line line-2"></div>
+                <div class="diagram-node node-cloud">
+                    <i class="fas fa-database"></i>
+                    <span>Base de Datos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características Section -->
+    <section id="caracteristicas" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Tecnología Avanzada</span>
+                <h2 class="section-title">Características Inteligentes</h2>
+                <p class="section-description">
+                    Todo lo que necesitas para un control completo de tu medicación
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="feature-title">Gestión Automática</h3>
+                    <p class="feature-description">
+                        Registra y organiza todos tus medicamentos automáticamente mediante tecnología RFID. Sin intervención manual.
+                    </p>
+                    <div class="feature-shine"></div>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-times"></i>
+                    </div>
+                    <h3 class="feature-title">Alertas de Caducidad</h3>
+                    <p class="feature-description">
+                        Recibe notificaciones antes de que tus medicamentos caduquen. Mantén tu botiquín siempre actualizado y seguro.
+                    </p>
+                    <div class="feature-shine"></div>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="feature-title">Recordatorios de Toma</h3>
+                    <p class="feature-description">
+                        Programa horarios personalizados para cada medicamento. El sistema te avisará mediante buzzer y notificaciones.
+                    </p>
+                    <div class="feature-shine"></div>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bluetooth-b"></i>
+                    </div>
+                    <h3 class="feature-title">Conexión Bluetooth</h3>
+                    <p class="feature-description">
+                        Sincronización en tiempo real entre el dispositivo ESP32 y tu smartphone mediante Bluetooth de bajo consumo.
+                    </p>
+                    <div class="feature-shine"></div>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3 class="feature-title">Identificación RFID</h3>
+                    <p class="feature-description">
+                        Tecnología de radiofrecuencia para identificación rápida y precisa. Compatible con etiquetas RFID estándar.
+                    </p>
+                    <div class="feature-shine"></div>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Historial y Estadísticas</h3>
+                    <p class="feature-description">
+                        Visualiza tu adherencia al tratamiento con gráficos detallados. Comparte reportes con tu médico.
+                    </p>
+                    <div class="feature-shine"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Demo Visual</span>
+                <h2 class="section-title">Conoce el Prototipo</h2>
+                <p class="section-description">
+                    Explora el dispositivo físico y la aplicación móvil en acción
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item glass-card">
+                    <div class="gallery-image">
+                        <div class="placeholder-image device-placeholder">
+                            <i class="fas fa-microchip"></i>
+                            <span>Dispositivo ESP32</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Hardware IoT</h4>
+                        <p>ESP32 con módulo RFID RC522 y pantalla LCD</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item glass-card">
+                    <div class="gallery-image">
+                        <div class="placeholder-image app-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>App Android</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Interfaz Móvil</h4>
+                        <p>Aplicación nativa Android con diseño Material</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item glass-card">
+                    <div class="gallery-image">
+                        <div class="placeholder-image rfid-placeholder">
+                            <i class="fas fa-wifi"></i>
+                            <span>Lectura RFID</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Sistema RFID</h4>
+                        <p>Identificación automática de medicamentos</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item glass-card">
+                    <div class="gallery-image">
+                        <div class="placeholder-image dashboard-placeholder">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Panel de Control</h4>
+                        <p>Estadísticas y gestión completa de medicamentos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-video glass-card">
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Video Demo del Sistema</span>
+                    <p>Mira PharmaSafe en funcionamiento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo Section -->
+    <section id="equipo" class="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Nuestro Equipo</span>
+                <h2 class="section-title">Desarrolladores del Proyecto</h2>
+                <p class="section-description">
+                    Estudiantes de ingeniería comprometidos con la innovación en salud digital
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member glass-card">
+                    <div class="member-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4 class="member-name">Tu Nombre</h4>
+                    <p class="member-role">Desarrollador IoT & Hardware</p>
+                    <p class="member-institution">Universidad / Institución</p>
+                    <div class="member-social">
+                        <a href="mailto:correo@example.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-member glass-card">
+                    <div class="member-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4 class="member-name">Nombre del Compañero</h4>
+                    <p class="member-role">Desarrollador de Software & App</p>
+                    <p class="member-institution">Universidad / Institución</p>
+                    <div class="member-social">
+                        <a href="mailto:correo@example.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content glass-card">
+                <div class="contact-info">
+                    <h2 class="contact-title">¿Interesado en PharmaSafe?</h2>
+                    <p class="contact-description">
+                        Si quieres conocer más sobre el proyecto, colaborar o implementar 
+                        esta solución, no dudes en contactarnos.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>pharmasafe@proyecto.edu</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Universidad / Ciudad, País</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Repositorio</h4>
+                                <p>github.com/pharmasafe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Tu nombre" class="form-input" required>
+                        <input type="email" placeholder="Tu email" class="form-input" required>
+                        <textarea placeholder="Mensaje" class="form-textarea" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Enviar mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-container">
+                        <div class="logo-icon">
+                            <i class="fas fa-pills"></i>
+                            <div class="rfid-signal"></div>
+                        </div>
+                        <span class="logo-text">PharmaSafe</span>
+                    </div>
+                    <p class="footer-tagline">Tu botiquín inteligente, siempre conectado</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Proyecto</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#como-funciona">Cómo Funciona</a></li>
+                            <li><a href="#caracteristicas">Características</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Información</h4>
+                        <ul>
+                            <li><a href="#galeria">Galería</a></li>
+                            <li><a href="#equipo">Equipo</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Síguenos</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PharmaSafe. Todos los derechos reservados.</p>
+                <p class="footer-tech">Desarrollado con <i class="fas fa-heart"></i> usando ESP32, RFID y Android</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
