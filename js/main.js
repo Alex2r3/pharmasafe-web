@@ -156,17 +156,7 @@ function initScrollEffects() {
             hero.style.opacity = 1 - scrolled / 800;
         }
         
-        // Feature cards parallax
-        const featureCards = document.querySelectorAll('.feature-card');
-        featureCards.forEach((card, index) => {
-            const cardTop = card.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-            
-            if (cardTop < windowHeight) {
-                const speed = 0.05 * (index + 1);
-                card.style.transform = `translateY(${-scrolled * speed}px)`;
-            }
-        });
+        // ELIMINADO: Feature cards parallax - para mantener el grid fijo
     });
 }
 
@@ -310,9 +300,9 @@ function init3DCardEffect() {
 }
 
 // Optional: Initialize 3D effect
-setTimeout(() => {
-    init3DCardEffect();
-}, 1000);
+// setTimeout(() => {
+//    init3DCardEffect();
+//}, 1000);
 
 /**
  * Add custom CSS animations
